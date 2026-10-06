@@ -2,7 +2,7 @@ const net = require('net');
 const crypto = require('crypto');
 
 // Suga will tell us which port to use via an environment variable
-const PORT = process.env.PORT || 8765;
+const PORT = process.env.PORT || 80;
 
 const rooms = new Map(); // room -> Set of sockets
 const sendMap = new Map(); // socket -> send function
